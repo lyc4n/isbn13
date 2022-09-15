@@ -14,7 +14,7 @@ describe ISBN13CheckDigitCalculator do
   end
 
   describe '#perform' do
-    it 'correctly computes the check digit' do
+    it 'returns the complete isbn13' do
       result_1 = ISBN13CheckDigitCalculator.perform('978014300723')
       expect(result_1).to eq('9780143007234')
 
